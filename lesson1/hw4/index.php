@@ -1,15 +1,18 @@
 <?php
+$year = date('Y');
+$title = 'minimalistica';
+$h1 = 'minimalistica';
 ?>
 
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel="stylesheet" href="css/main.css" type="text/css" />
-	<title></title>
+	<title><? echo $title ?></title>
 </head>
 <body>
 	<div id="content">
-		<h1>minimalistica</h1>
+		<h1><? echo $h1 ?></h1>
 		
 		<ul id="menu">
 			<li><a href="#">home</a></li>
@@ -46,7 +49,7 @@
 		</div>
 		
 		<div id="footer">
-			<p>Copyright &copy; <em>minimalistica</em> &middot; Design: Luka Cvrk, <a href=\"http://www.solucija.com/\" title=\"Free CSS Templates\">Solucija</a></p>
+			<p>Copyright <?php echo $year ?> &copy; <em>minimalistica</em> &middot; Design: Luka Cvrk, <a href=\"http://www.solucija.com/\" title=\"Free CSS Templates\">Solucija</a></p>
 		</div>	
 	</div>
 </body>
